@@ -1,0 +1,23 @@
+queue:
+  settings:
+    time-offset-minutes: 0 #смещение относительно текущего локального времени на пк в минутах
+  calls:
+    '19:56': "storm-event"
+    '00:28': "storm-event"
+
+tasks:
+  storm:
+    id: "storm-event"
+    data-container:
+      pre-spawn-message: "Вай, это что такое там происходит на %x %z?!?!?!"
+      spawn-message: "Вай, да там ваще ужас"
+      players-who-see-messages: "IN WORLD: WORLD"
+      event-world: "world"
+      key-3: true
+      loot-item-1: 'DIAMOND:20'
+      loot-item-2: 'EMERALD:4'
+      holo-line-down: 'Осталось до открытия %t1%/%t2%' #в ключе может быть любое имя, главное наличие 'holo-line-'
+      holo-line-center: 'В нём что-то лежит'
+      holo-line-up: 'Сундук'
+      schematic-offset: '-7 0 7'
+      schematic-name: 'sputnik2.schem'
